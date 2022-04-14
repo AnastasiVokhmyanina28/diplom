@@ -1,0 +1,259 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    outline: aqua;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    line-height: 135%;
+    float: left;
+}
+
+a {
+    color: navy;
+    text-decoration: none;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+a, a:hover {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.clear {
+    clear: both;
+}
+
+/*Стили для шапки */
+header {
+    width: 95%;
+    height: 4%;
+    float: left;
+    padding: 3%;
+    background-color: #397F78;
+    border-bottom: 2px solid silver;
+    align-items: center;
+    display: flex;
+}
+
+header #logt{
+    float: left;
+    vertical-align: center;
+    margin-right: 2em;
+}
+
+header #logo {
+    width: 41%;
+    float: left;
+}
+
+header #logo a{
+    color: white;
+    font-size: 1.75em;
+    vertical-align: center;
+    font-family: Times New Roman, sans-serif;
+}
+
+header #menu {
+    width: 35%;
+    float: left;
+}
+
+header #menu div {
+    float: left;
+    padding: 5px;
+    margin-right: 2%;
+    border-radius: 10px;
+    color: #397F78;
+    border: 2px solid #49A299;
+    background-color: #D7F7FC;
+}
+
+header #menu div:hover {
+    background-color: #e4f2f0;
+}
+
+header #auth div {
+    float: right;
+    padding: 5px;
+    margin-right: 2%;
+    border-radius: 10px;
+    color: #008080;
+    border: 2px solid #49A299; /* Параметры рамки */
+    background: #D7F7FC; /* Цвет фона */
+    font-size: 14px; /* Размер текста */
+    padding: 5px 20px;
+}
+
+header #auth div:hover {
+    background-color: #e4f2f0;
+}
+
+
+.card{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 370px 370px ;
+    grid-gap: 30px;
+    float: left;
+    text-align: center;
+    font-family: "Times New Roman" ;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+    font-family: "Times New Roman" ;
+}
+
+.card button { /*кнопка подробнее*/
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #49A299;
+    text-align: center ;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Times New Roman" ;
+}
+
+/*прозрачночть*/
+.card button:hover {
+    opacity: 0.7;
+}
+
+
+
+
+/*подвал*/
+footer {
+    background:#397F78;
+    color: #dbdbdb;
+    font-size: 11px;
+}
+
+#footer {
+    max-width: 960px;
+    margin: auto;
+    padding: 10px 0;
+    height: 95px;
+}
+
+footer h3 {
+    font: 14px 'Oswald', sans-serif;
+    color: #fff;
+    border-bottom: 1px solid #919191;
+    margin: 0 0 10px 0;
+}
+
+#twitter time a {
+    color: #b4aeae;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#twitter {
+    float: left;
+    width: 300px;
+}
+
+#twitter p {
+    padding-right: 15px;
+}
+
+footer a {
+    color: #dbdbdb;
+}
+
+#sitemap {
+    width: 150px;
+    float: left;
+    margin-left: 20px;
+    padding-right: 15px;
+}
+
+#sitemap div {
+    display: inline-block;
+}
+
+#sitemap div + div {
+    margin-left: 40px;
+}
+
+#sitemap a {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#sitemap a:hover {
+    text-decoration: underline;
+}
+#social {
+    float: left;
+    margin-left: 20px;
+    width: 130px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background: url(img/111.PNG) no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+.twitter {
+    background-position: 0 0;
+}
+
+.facebook {
+    background-position: -30px 0;
+}
+
+.google-plus {
+    background-position: -60px 0;
+}
+
+.vimeo {
+    background-position: 0 0;
+}
+
+.youtube {
+    background-position: -16px 0;
+}
+
+.flickr {
+    background-position: -32px 0;
+}
+
+.instagram {
+    background-position: -48px 0;
+}
+
+.rss {
+    background-position: -64px 0;
+}
